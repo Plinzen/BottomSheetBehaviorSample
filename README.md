@@ -3,11 +3,11 @@ A very simple example of the BottomSheetBehavior feature introduced with Android
 
 The sample simply added a View, which can be collapsed:
 
-![Collapsed](/image/collapsed.png | width=200)
+![Collapsed](/image/collapsed.png)
 
 or expanded:
 
-![Expanded](/image/expanded.png | width=50%)
+![Expanded](/image/expanded.png)
 
 The relevants files are:
 - ScrollingActivity.java
