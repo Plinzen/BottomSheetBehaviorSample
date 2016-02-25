@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:fitsSystemWindows="true"
+   tools:context="sample.com.bottomsheet.ScrollingActivity">
+
+   <android.support.design.widget.AppBarLayout
+      android:id="@+id/app_bar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/app_bar_height"
+      android:fitsSystemWindows="true"
+      android:theme="@style/AppTheme.AppBarOverlay">
+
+      <android.support.design.widget.CollapsingToolbarLayout
+         android:id="@+id/toolbar_layout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:fitsSystemWindows="true"
+         app:contentScrim="?attr/colorPrimary"
+         app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+         <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+      </android.support.design.widget.CollapsingToolbarLayout>
+   </android.support.design.widget.AppBarLayout>
+
+   <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@android:color/holo_red_light">
+
+      <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:text="Main Content"
+         android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+   </FrameLayout>
+
+   <LinearLayout
+      android:id="@+id/design_bottom_sheet"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/holo_green_light"
+      android:orientation="vertical"
+      android:paddingTop="8dp"
+      app:behavior_peekHeight="32dp"
+      app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+      <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="8dp"
+         android:text="Line 1" />
+
+      <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="8dp"
+         android:text="Line 2" />
+
+      <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="8dp"
+         android:text="Line 3" />
+
+      <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="8dp"
+         android:text="Line 4" />
+
+      <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="8dp"
+         android:text="Line 5" />
+
+      <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="8dp"
+         android:text="Line 6" />
+
+   </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
